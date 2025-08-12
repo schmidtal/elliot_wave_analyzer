@@ -3,7 +3,6 @@ import copy
 
 @dataclass(frozen=True)
 class CoreValues:
-    TIINGO_API_TOKEN = '9cb64b1ee6217683e3db3a1995f53a0745f0c156'
     MIN_FIBO_RETRACE = 0.50
     MAX_FIBO_RETRACE = 0.8
     CORRECTION_WAVE_1: float = 0.22
@@ -37,3 +36,4 @@ DEFAULT_CoreValues = CoreValues()
 # Funktion zum Erzeugen einer veränderbaren Kopie
 def get_config_copy() -> CoreValues:
     return copy.deepcopy(DEFAULT_CoreValues)
+
